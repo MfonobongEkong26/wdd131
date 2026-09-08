@@ -92,6 +92,44 @@ h1 {
     margin: 0 auto 1rem;
 }
 
+/* Web Development Resources */
+
+.resources {
+    margin-top: 1.5rem;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.resources h2 {
+    margin: 0;
+    padding: 1rem;
+    background-color: #243447;
+    color: white;
+    text-align: center;
+    font-family: "Roboto Slab", serif;
+}
+
+.resources ul {
+    margin: 0;
+    padding: 1.5rem 2rem 1.5rem 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem;
+}
+
+.resources a {
+    color: #243447;
+    font-weight: bold;
+}
+
+.resources a:hover {
+    color: #4f6d7a;
+    text-decoration: underline;
+}
+
 footer {
     background-color: #243447;
     color: white;
@@ -112,5 +150,9 @@ footer p {
     nav {
         flex-direction: column;
         gap: 0.5rem;
+    }
+
+    .resources ul {
+        grid-template-columns: 1fr;
     }
 }
