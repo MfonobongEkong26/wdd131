@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nigeria | Country Page</title>
+
+    <meta name="description" content="Learn about Nigeria, including its location, culture, and weather.">
+    <meta name="author" content="Mfonobong">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/place.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+
+    <main>
+
+        <!-- Hero Image -->
+        <div class="hero">
+            <picture>
+                <source
+                    media="(max-width: 700px)"
+                    srcset="images/nigeria-small.webp">
+                <source
+                    media="(min-width: 701px)"
+                    srcset="images/nigeria-large.webp">
+                <img
+                    src="images/nigeria-large.webp"
+                    alt="Beautiful landscape representing Nigeria"
+                    width="1200"
+                    height="600">
+            </picture>
+        </div>
+
+        <!-- About Nigeria -->
+        <section class="about">
+            <h2>About Nigeria</h2>
+
+            <div class="about-content">
+                <p>
+                    Nigeria is a country in West Africa known for its diverse
+                    cultures, languages, landscapes, and rich history. It is
+                    home to many different ethnic groups and is one of the most
+                    populous countries in Africa.
+                </p>
+
+                <p>
+                    Nigeria has a variety of natural environments, including
+                    tropical forests, savannas, rivers, and coastal areas.
+                    Its people are known for their vibrant traditions, music,
+                    food, and hospitality.
+                </p>
+            </div>
+        </section>
+
+        <!-- Weather -->
+        <section class="weather">
+            <h2>Weather</h2>
+
+            <div class="weather-content">
+
+                <!-- Mobile weather icon -->
+                <img
+                    class="weather-icon-mobile"
+                    src="images/weather.svg"
+                    alt="Partly cloudy weather">
+
+                <div class="weather-information">
+                    <p><strong>Temperature:</strong> <span id="temperature">28</span> °C</p>
+
+                    <p><strong>Wind Speed:</strong> <span id="wind-speed">10</span> km/h</p>
+
+                    <p><strong>Wind Chill:</strong> <span id="wind-chill">N/A</span></p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> Mfonobong, Nigeria
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+</html>
