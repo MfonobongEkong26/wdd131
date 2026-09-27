@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Temple Album</title>
+
+    <meta name="description" content="A responsive temple album featuring temples from around the world.">
+    <meta name="author" content="Mfonobong">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+
+            <span id="site-title">Temple Album</span>
+
+            <button id="menu-button" aria-label="Open navigation menu">
+                ☰
+            </button>
+
+            <nav id="navigation">
+                <a href="#" id="home">Home</a>
+                <a href="#" id="old">Old</a>
+                <a href="#" id="new">New</a>
+                <a href="#" id="large">Large</a>
+                <a href="#" id="small">Small</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+        <h1>Temple Album</h1>
+
+        <!-- JavaScript will create the temple cards here -->
+        <div class="temple-grid" id="temple-container"></div>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> Mfonobong
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+
+</html>
