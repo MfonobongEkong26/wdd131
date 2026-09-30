@@ -1,0 +1,278 @@
+/* Color Schema
+   Dark Navy: #1F2937
+   Construction Orange: #F59E0B
+   White: #FFFFFF
+*/
+
+/* General styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.6;
+    color: #1F2937;
+    background-color: #FFFFFF;
+}
+
+/* Header */
+header {
+    background-color: #1F2937;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 2rem 1rem;
+    border-bottom: 6px solid #F59E0B;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 1rem;
+    background-color: #F59E0B;
+    color: #1F2937;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto Slab", serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+header h1 {
+    margin: 0;
+    font-family: "Roboto Slab", serif;
+    font-size: 2rem;
+}
+
+header p {
+    margin: 0.5rem 0 0;
+    font-size: 1.1rem;
+}
+
+/* Main content */
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+/* Sections */
+section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background-color: #FFFFFF;
+    border-left: 5px solid #F59E0B;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-top: 0;
+    padding-bottom: 0.5rem;
+    color: #1F2937;
+    font-family: "Roboto Slab", serif;
+    border-bottom: 2px solid #F59E0B;
+}
+
+h3 {
+    color: #1F2937;
+    font-family: "Roboto Slab", serif;
+}
+
+p {
+    max-width: 900px;
+}
+
+li {
+    margin-bottom: 0.7rem;
+}
+
+/* Color schema section */
+.color-boxes {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.color-card {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.color-sample {
+    height: 70px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+}
+
+.navy .color-sample {
+    background-color: #1F2937;
+}
+
+.orange .color-sample {
+    background-color: #F59E0B;
+}
+
+.white .color-sample {
+    background-color: #FFFFFF;
+}
+
+/* Typography section */
+.font-example {
+    padding: 1rem;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+}
+
+.heading-font {
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+}
+
+.body-font {
+    font-family: "Roboto", sans-serif;
+}
+
+/* Wireframes */
+.wireframe {
+    margin: 1.5rem auto 3rem;
+    padding: 0.5rem;
+    border: 3px solid #1F2937;
+    background-color: #f4f4f4;
+}
+
+.mobile-wireframe {
+    max-width: 350px;
+}
+
+.desktop-wireframe {
+    max-width: 950px;
+}
+
+.wire-header {
+    min-height: 55px;
+    padding: 1rem;
+    background-color: #1F2937;
+    color: #FFFFFF;
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wire-hero {
+    min-height: 160px;
+    margin: 0.5rem 0;
+    padding: 2rem 1rem;
+    background-color: #ddd;
+    border: 2px dashed #1F2937;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wire-section {
+    margin: 0.5rem 0;
+    padding: 1rem;
+    min-height: 100px;
+    background-color: #FFFFFF;
+    border: 2px dashed #F59E0B;
+    text-align: center;
+    font-family: "Roboto Slab", serif;
+}
+
+.wire-small-box {
+    margin: 0.5rem 0;
+    padding: 0.7rem;
+    background-color: #e5e7eb;
+    border: 1px solid #1F2937;
+    font-family: "Roboto", sans-serif;
+}
+
+.wire-row {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.wire-box {
+    flex: 1;
+    min-height: 80px;
+    padding: 1rem;
+    background-color: #e5e7eb;
+    border: 1px solid #1F2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.wire-image {
+    flex: 1;
+    min-height: 100px;
+    padding: 2rem 1rem;
+    background-color: #d1d5db;
+    border: 2px dashed #1F2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.wire-footer {
+    padding: 1rem;
+    background-color: #1F2937;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: "Roboto Slab", serif;
+}
+
+/* Footer */
+footer {
+    background-color: #1F2937;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1.5rem;
+    border-top: 6px solid #F59E0B;
+}
+
+footer p {
+    margin: 0.4rem auto;
+}
+
+/* Larger screens */
+@media screen and (min-width: 700px) {
+
+    header {
+        padding: 2.5rem 1rem;
+    }
+
+    header h1 {
+        font-size: 2.8rem;
+    }
+
+    main {
+        padding: 3rem 0;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+    .color-boxes {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .wireframe {
+        padding: 1rem;
+    }
+}
