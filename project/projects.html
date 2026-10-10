@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore illustrative construction, commercial building, and renovation project concepts on the Serverbase Engineering Limited website.">
+    <meta name="author" content="Mfonobong">
+    <title>Projects | Serverbase Engineering Limited</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="index.html">
+                <span class="brand-mark">SE</span>
+                <span>Serverbase <strong>Engineering</strong></span>
+            </a>
+            <button class="menu-toggle" id="menu-toggle" type="button"
+                aria-label="Open navigation" aria-expanded="false">☰</button>
+            <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a class="active" href="projects.html" aria-current="page">Projects</a>
+                <a href="index.html#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-banner">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1800&q=80"
+                alt="" width="1800" height="800">
+            <div class="page-banner-overlay"></div>
+            <div class="page-banner-content container">
+                <p class="eyebrow">PROJECT PORTFOLIO</p>
+                <h1>Ideas shaped into spaces</h1>
+                <p>Explore example project concepts that demonstrate the range of work a construction and engineering team may coordinate.</p>
+            </div>
+        </section>
+
+        <section class="section container">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">PROJECT EXAMPLES</p>
+                    <h2>Explore project concepts</h2>
+                </div>
+                <p class="section-intro">These are illustrative concepts for this student website, not verified company contracts or completed projects.</p>
+            </div>
+
+            <div class="filter-controls" aria-label="Filter project concepts">
+                <button class="filter-button active" type="button" data-project-filter="all" aria-pressed="true">All Projects</button>
+                <button class="filter-button" type="button" data-project-filter="residential" aria-pressed="false">Residential</button>
+                <button class="filter-button" type="button" data-project-filter="commercial" aria-pressed="false">Commercial</button>
+                <button class="filter-button" type="button" data-project-filter="renovation" aria-pressed="false">Renovation</button>
+            </div>
+
+            <p class="project-visit-count">
+                Your visits to this page: <strong id="project-visit-count">0</strong>
+            </p>
+
+            <div class="card-grid project-grid" id="project-list" aria-live="polite"></div>
+            <p class="empty-message" id="project-empty" hidden>No projects match this category.</p>
+        </section>
+
+        <section class="callout-section">
+            <div class="container callout-inner">
+                <div>
+                    <p class="eyebrow">YOUR IDEA COULD BE NEXT</p>
+                    <h2>Every project starts with a conversation.</h2>
+                    <p>Describe the space you want to build, improve, or plan.</p>
+                </div>
+                <a class="button button-orange" href="index.html#contact">Discuss Your Idea</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div>
+                <a class="brand footer-brand" href="index.html">
+                    <span class="brand-mark">SE</span>
+                    <span>Serverbase <strong>Engineering</strong></span>
+                </a>
+                <p>Construction and engineering solutions.</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="references.html">References</a>
+                <a href="siteplan.html">Site Plan</a>
+            </div>
+            <p class="copyright">© <span class="current-year"></span> Serverbase Engineering Limited. Educational website project by Mfonobong.</p>
+        </div>
+    </footer>
+</body>
+</html>

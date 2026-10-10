@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the building construction, engineering support, and project management services presented by Serverbase Engineering Limited.">
+    <meta name="author" content="Mfonobong">
+    <title>Services | Serverbase Engineering Limited</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="index.html">
+                <span class="brand-mark">SE</span>
+                <span>Serverbase <strong>Engineering</strong></span>
+            </a>
+            <button class="menu-toggle" id="menu-toggle" type="button"
+                aria-label="Open navigation" aria-expanded="false">☰</button>
+            <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a class="active" href="services.html" aria-current="page">Services</a>
+                <a href="projects.html">Projects</a>
+                <a href="index.html#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-banner">
+            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1800&q=80"
+                alt="" width="1800" height="800">
+            <div class="page-banner-overlay"></div>
+            <div class="page-banner-content container">
+                <p class="eyebrow">OUR CAPABILITIES</p>
+                <h1>Services designed around your project</h1>
+                <p>Explore common construction and engineering service areas and identify the support that best fits your needs.</p>
+            </div>
+        </section>
+
+        <section class="section container">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">HOW WE CAN HELP</p>
+                    <h2>Our services</h2>
+                </div>
+                <p class="section-intro">Select a category to explore the services in that area.</p>
+            </div>
+
+            <div class="filter-controls" aria-label="Filter services">
+                <button class="filter-button active" type="button" data-service-filter="all" aria-pressed="true">All Services</button>
+                <button class="filter-button" type="button" data-service-filter="construction" aria-pressed="false">Construction</button>
+                <button class="filter-button" type="button" data-service-filter="engineering" aria-pressed="false">Engineering</button>
+                <button class="filter-button" type="button" data-service-filter="management" aria-pressed="false">Management</button>
+            </div>
+
+            <div class="card-grid service-list" id="service-list">
+                <article class="service-card">
+                    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=80"
+                        alt="Architectural design of a building" width="900" height="600" loading="lazy">
+                    <div class="card-body">
+                        <span class="card-number">01 / CONSTRUCTION</span>
+                        <h2 id="building">Building Construction</h2>
+                        <p>Support for planning and coordinating building projects, with attention to scope, materials, workmanship, and safe working practices.</p>
+                        <ul>
+                            <li>Project scope and preparation</li>
+                            <li>Construction coordination</li>
+                            <li>Work quality and progress checks</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="service-card">
+                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=900&q=80"
+                        alt="Engineer working with technical equipment" width="900" height="600" loading="lazy">
+                    <div class="card-body">
+                        <span class="card-number">02 / ENGINEERING</span>
+                        <h2 id="engineering">Engineering Support</h2>
+                        <p>Technical coordination that helps construction teams interpret project requirements and organize information for delivery.</p>
+                        <ul>
+                            <li>Technical documentation coordination</li>
+                            <li>Design-team communication</li>
+                            <li>Construction problem-solving support</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="service-card">
+                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=900&q=80"
+                        alt="Construction workers on a project site" width="900" height="600" loading="lazy">
+                    <div class="card-body">
+                        <span class="card-number">03 / MANAGEMENT</span>
+                        <h2 id="management">Project Management</h2>
+                        <p>Organizing the activities, schedules, communication, and resources that help a project stay coordinated.</p>
+                        <ul>
+                            <li>Work schedules and milestones</li>
+                            <li>Progress tracking</li>
+                            <li>Stakeholder communication</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="service-card">
+                    <img src="https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?auto=format&fit=crop&w=900&q=80"
+                        alt="Building under construction" width="900" height="600" loading="lazy">
+                    <div class="card-body">
+                        <span class="card-number">04 / CONSTRUCTION</span>
+                        <h2>Renovation and Improvement</h2>
+                        <p>Planning support for upgrades and improvements to existing spaces, including defining needs and coordinating work.</p>
+                        <ul>
+                            <li>Needs and scope review</li>
+                            <li>Work sequencing</li>
+                            <li>Improvement planning</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="service-card">
+                    <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80"
+                        alt="Modern office interior" width="900" height="600" loading="lazy">
+                    <div class="card-body">
+                        <span class="card-number">05 / MANAGEMENT</span>
+                        <h2>Planning and Coordination</h2>
+                        <p>Helping organize project requirements, responsibilities, timelines, and communication before and during work.</p>
+                        <ul>
+                            <li>Task and responsibility planning</li>
+                            <li>Schedule coordination</li>
+                            <li>Project updates</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="service-card">
+                    <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=900&q=80"
+                        alt="Technical professional examining equipment" width="900" height="600" loading="lazy">
+                    <div class="card-body">
+                        <span class="card-number">06 / ENGINEERING</span>
+                        <h2>Technical Consultation</h2>
+                        <p>Early-stage discussion to clarify a project brief, identify questions, and determine what qualified professionals may need to review.</p>
+                        <ul>
+                            <li>Initial project discussion</li>
+                            <li>Requirements clarification</li>
+                            <li>Next-step planning</li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+
+            <p class="empty-message" id="service-empty" hidden>No services match this category.</p>
+        </section>
+
+        <section class="callout-section">
+            <div class="container callout-inner">
+                <div>
+                    <p class="eyebrow">READY TO GET STARTED?</p>
+                    <h2>Tell us about your project.</h2>
+                    <p>Use the enquiry form to describe your goals and the kind of support you are looking for.</p>
+                </div>
+                <a class="button button-orange" href="index.html#contact">Make an Enquiry</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div>
+                <a class="brand footer-brand" href="index.html">
+                    <span class="brand-mark">SE</span>
+                    <span>Serverbase <strong>Engineering</strong></span>
+                </a>
+                <p>Construction and engineering solutions.</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="references.html">References</a>
+                <a href="siteplan.html">Site Plan</a>
+            </div>
+            <p class="copyright">© <span class="current-year"></span> Serverbase Engineering Limited. Educational website project by Mfonobong.</p>
+        </div>
+    </footer>
+</body>
+</html>
